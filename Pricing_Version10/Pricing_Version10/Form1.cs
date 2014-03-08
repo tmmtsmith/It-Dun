@@ -34,5 +34,57 @@ namespace Pricing_Version10
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtLeads.Text == "" && txtTrial.Text == "" && txtClose.Text == "")
+            {
+                MessageBox.Show("At least one box must hold a numeric value.");
+            }
+            else
+            {
+                using (var scon = Connections.Connect())
+                {
+                    try
+                    {
+                        SqlCommand addRes = new SqlCommand("INSERT INTO StageResults (mName,cLeads,cTrial,cClose) SELECT @1,@2,@3,@4", scon);
+                        addRes.Parameters.Add(new SqlParameter("@1", cbMerchants.SelectedItem.ToString()));
+                        addRes.Parameters.Add(new SqlParameter("@2", txtLeads.Text));
+                        addRes.Parameters.Add(new SqlParameter("@3", txtTrial.Text));
+                        addRes.Parameters.Add(new SqlParameter("@4", txtClose.Text));
+                        addRes.ExecuteNonQuery();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Either connection to the database failed, or you entered invalid values.");
+                    }
+                    finally
+                    {
+                        SqlCommand move = new SqlCommand("EXECUTE stp_Move", scon);
+                        move.ExecuteNonQuery();
+                        scon.Close();
+                    }
+                }
+
+                txtLeads.Text = String.Empty;
+                txtTrial.Text = String.Empty;
+                txtClose.Text = String.Empty;
+                cbMerchants.SelectedIndex = -1;
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtLeads.Text = String.Empty;
+            txtTrial.Text = String.Empty;
+            txtClose.Text = String.Empty;
+            cbMerchants.SelectedIndex = -1;
+        }
     }
 }
