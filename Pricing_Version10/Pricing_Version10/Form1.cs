@@ -18,12 +18,12 @@ namespace Pricing_Version10
 
             using (var scon = Connections.Connect())
             {
-                SqlCommand qMer = new SqlCommand("SELECT DISTINCT MerchantName FROM MerchantList", scon);
+                SqlCommand qMer = new SqlCommand("SELECT DISTINCT ApproachName FROM ApproachList", scon);
                 SqlDataReader rMer = qMer.ExecuteReader();
 
                 while (rMer.Read())
                 {
-                    cbMerchants.Items.Add(rMer["MerchantName"].ToString());
+                    cbMerchants.Items.Add(rMer["ApproachName"].ToString());
                 }
 
                 scon.Close();
@@ -85,6 +85,13 @@ namespace Pricing_Version10
             txtTrial.Text = String.Empty;
             txtClose.Text = String.Empty;
             cbMerchants.SelectedIndex = -1;
+        }
+
+        fAddMerchant formAdd = new fAddMerchant();
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {  
+            formAdd.ShowDialog();
         }
     }
 }

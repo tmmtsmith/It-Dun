@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.lkAddMerchant = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtClose, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtLeads, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTrial, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 36);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 55);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -89,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(66, 77);
+            this.button1.Location = new System.Drawing.Point(66, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -99,7 +100,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(226, 77);
+            this.button2.Location = new System.Drawing.Point(226, 96);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -109,7 +110,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(145, 77);
+            this.button3.Location = new System.Drawing.Point(145, 96);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
@@ -117,11 +118,23 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // lkAddMerchant
+            // 
+            this.lkAddMerchant.AutoSize = true;
+            this.lkAddMerchant.Location = new System.Drawing.Point(13, 13);
+            this.lkAddMerchant.Name = "lkAddMerchant";
+            this.lkAddMerchant.Size = new System.Drawing.Size(75, 13);
+            this.lkAddMerchant.TabIndex = 8;
+            this.lkAddMerchant.TabStop = true;
+            this.lkAddMerchant.Text = "Add Approach";
+            this.lkAddMerchant.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(337, 220);
+            this.Controls.Add(this.lkAddMerchant);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -131,6 +144,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -144,6 +158,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.LinkLabel lkAddMerchant;
     }
 }
 
