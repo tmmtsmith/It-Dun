@@ -93,7 +93,6 @@ namespace Pricing_Version10
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {  
-            formAdd.ShowDialog();
 
         }
     }

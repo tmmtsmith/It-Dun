@@ -30,6 +30,7 @@
         {
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.lkRaw = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -54,11 +55,23 @@
             this.linkLabel2.Text = "Add Approach";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // lkRaw
+            // 
+            this.lkRaw.AutoSize = true;
+            this.lkRaw.Location = new System.Drawing.Point(165, 13);
+            this.lkRaw.Name = "lkRaw";
+            this.lkRaw.Size = new System.Drawing.Size(81, 13);
+            this.lkRaw.TabIndex = 2;
+            this.lkRaw.TabStop = true;
+            this.lkRaw.Text = "View Raw Data";
+            this.lkRaw.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkRaw_LinkClicked);
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 134);
+            this.Controls.Add(this.lkRaw);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Name = "Init";
@@ -72,5 +85,6 @@
 
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel lkRaw;
     }
 }

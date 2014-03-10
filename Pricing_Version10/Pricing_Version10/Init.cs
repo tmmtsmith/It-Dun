@@ -29,5 +29,12 @@ namespace Pricing_Version10
         {
             formAdd.ShowDialog();
         }
+
+        Raw fRaw = new Raw();
+
+        private void lkRaw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fRaw.ShowDialog();
+        }
     }
 }
