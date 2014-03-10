@@ -16,6 +16,7 @@ namespace Pricing_Version10
         {
             InitializeComponent();
 
+            
             using (var scon = Connections.Connect())
             {
                 SqlCommand qMer = new SqlCommand("SELECT DISTINCT ApproachName FROM ApproachList", scon);
@@ -28,6 +29,7 @@ namespace Pricing_Version10
 
                 scon.Close();
             }
+
         }
 
         private void cbMerchants_SelectedIndexChanged(object sender, EventArgs e)
@@ -92,6 +94,7 @@ namespace Pricing_Version10
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {  
             formAdd.ShowDialog();
+
         }
     }
 }
