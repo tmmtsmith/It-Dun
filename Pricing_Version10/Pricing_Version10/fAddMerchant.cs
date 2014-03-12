@@ -19,7 +19,7 @@ namespace Pricing_Version10
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,7 +33,6 @@ namespace Pricing_Version10
             }
 
             txtAddApp.Text = String.Empty;
-            this.DialogResult = DialogResult.OK;
             Close();
         }
     }

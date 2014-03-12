@@ -20,21 +20,29 @@ namespace Pricing_Version10
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            fForm1.ShowDialog();
+            fForm1.Show();
         }
 
         fAddMerchant formAdd = new fAddMerchant();
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            formAdd.ShowDialog();
+            formAdd.Show();
         }
 
         Raw fRaw = new Raw();
 
         private void lkRaw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            fRaw.ShowDialog();
+            fRaw.Show();
         }
+
+        Analysis fAnalysis = new Analysis();
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fAnalysis.Show();
+        }
+
     }
 }
