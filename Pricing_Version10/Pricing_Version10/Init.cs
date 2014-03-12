@@ -20,6 +20,11 @@ namespace Pricing_Version10
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (fForm1.IsDisposed == true)
+            {
+                fForm1 = new Form1();
+            }
+            
             fForm1.Show();
         }
 
@@ -27,6 +32,11 @@ namespace Pricing_Version10
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (formAdd.IsDisposed == true)
+            {
+                formAdd = new fAddMerchant();
+            }
+            
             formAdd.Show();
         }
 
@@ -34,6 +44,11 @@ namespace Pricing_Version10
 
         private void lkRaw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (fRaw.IsDisposed == true)
+            {
+                fRaw = new Raw();
+            }
+            
             fRaw.Show();
         }
 
@@ -41,6 +56,11 @@ namespace Pricing_Version10
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            if (fAnalysis.IsDisposed == true)
+            {
+                fAnalysis = new Analysis();
+            }
+            
             fAnalysis.Show();
         }
 
