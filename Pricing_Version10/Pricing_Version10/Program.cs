@@ -51,4 +51,15 @@ namespace Pricing_Version10
             }
         }
     }
+
+    public static class Pricing
+    {
+        public static double GetPricing(double cost, double lessons, double discount)
+        {
+            double a = (cost * lessons);
+            discount = (discount / 100);
+            double x = (a * discount);
+            return x;
+        }
+    }
 }

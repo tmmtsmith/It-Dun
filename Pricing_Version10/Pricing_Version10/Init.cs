@@ -64,5 +64,46 @@ namespace Pricing_Version10
             fAnalysis.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double cpl = Convert.ToDouble(txtCPL.Text);
+                double less = Convert.ToDouble(txtLess.Text);
+                double dis = Convert.ToDouble(txtDis.Text);
+                double ret = Pricing.GetPricing(cpl, less, dis);
+
+                try
+                {
+                    txtRes.AppendText("$" + Convert.ToString(ret));
+                }
+                catch
+                {
+                    MessageBox.Show("Failed to produce final value.");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error: Make sure all of the above boxes are valid numbers.");
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (Control co in Controls)
+            {
+                if (co is TextBox)
+                {
+                    (co as TextBox).Clear();
+                }
+            }
+        }
+
     }
 }
