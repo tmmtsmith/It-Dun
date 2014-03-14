@@ -18,5 +18,10 @@ namespace Pricing_Version10
             string q = "SELECT * FROM view_Raw";
             ReturnTables.ReturnGridView(dGridView, q);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
