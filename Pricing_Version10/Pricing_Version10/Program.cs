@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
 
 namespace Pricing_Version10
 {
@@ -28,6 +29,20 @@ namespace Pricing_Version10
             SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=ClientMarketing");
             scon.Open();
             return scon;
+        }
+
+        public static string GetFiles(string src, string dest)
+        {
+            try
+            {
+                WebClient getFile = new WebClient();
+                getFile.DownloadFile(src, dest);
+                return "Success";
+            }
+            catch
+            {
+                return "Failure";
+            }
         }
     }
 
