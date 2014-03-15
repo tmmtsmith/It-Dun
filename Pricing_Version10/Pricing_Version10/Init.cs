@@ -72,6 +72,7 @@ namespace Pricing_Version10
                 double less = Convert.ToDouble(txtLess.Text);
                 double dis = Convert.ToDouble(txtDis.Text);
                 double ret = Pricing.GetPricing(cpl, less, dis);
+                txtRes.Clear();
 
                 try
                 {

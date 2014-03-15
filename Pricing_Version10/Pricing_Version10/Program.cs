@@ -74,7 +74,8 @@ namespace Pricing_Version10
             double a = (cost * lessons);
             discount = (discount / 100);
             double x = (a * discount);
-            return x;
+            double y = a - x;
+            return y;
         }
     }
 }
