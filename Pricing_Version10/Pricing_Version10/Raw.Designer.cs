@@ -37,6 +37,11 @@
             // 
             // dGridView
             // 
+            this.dGridView.AllowUserToAddRows = false;
+            this.dGridView.AllowUserToDeleteRows = false;
+            this.dGridView.AllowUserToResizeColumns = false;
+            this.dGridView.AllowUserToResizeRows = false;
+            this.dGridView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -54,8 +59,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dGridView.Location = new System.Drawing.Point(12, 25);
             this.dGridView.Name = "dGridView";
+            this.dGridView.ReadOnly = true;
             this.dGridView.Size = new System.Drawing.Size(546, 150);
             this.dGridView.TabIndex = 0;
             // 
