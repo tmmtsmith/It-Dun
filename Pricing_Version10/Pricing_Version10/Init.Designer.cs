@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.lkRaw = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Init));
             this.txtCPL = new System.Windows.Forms.TextBox();
             this.txtLess = new System.Windows.Forms.TextBox();
             this.txtDis = new System.Windows.Forms.TextBox();
@@ -43,77 +40,40 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnMerch = new System.Windows.Forms.Button();
+            this.btnRaw = new System.Windows.Forms.Button();
+            this.btnAnalysis = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(13, 13);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(64, 13);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Add Results";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(84, 13);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(75, 13);
-            this.linkLabel2.TabIndex = 1;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Add Approach";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // lkRaw
-            // 
-            this.lkRaw.AutoSize = true;
-            this.lkRaw.Location = new System.Drawing.Point(165, 13);
-            this.lkRaw.Name = "lkRaw";
-            this.lkRaw.Size = new System.Drawing.Size(81, 13);
-            this.lkRaw.TabIndex = 2;
-            this.lkRaw.TabStop = true;
-            this.lkRaw.Text = "View Raw Data";
-            this.lkRaw.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkRaw_LinkClicked);
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(252, 13);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(71, 13);
-            this.linkLabel3.TabIndex = 3;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "View Analysis";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // txtCPL
             // 
-            this.txtCPL.Location = new System.Drawing.Point(151, 67);
+            this.txtCPL.Location = new System.Drawing.Point(207, 95);
             this.txtCPL.Name = "txtCPL";
-            this.txtCPL.Size = new System.Drawing.Size(29, 20);
+            this.txtCPL.Size = new System.Drawing.Size(48, 20);
             this.txtCPL.TabIndex = 4;
             // 
             // txtLess
             // 
-            this.txtLess.Location = new System.Drawing.Point(151, 93);
+            this.txtLess.Location = new System.Drawing.Point(207, 125);
             this.txtLess.Name = "txtLess";
-            this.txtLess.Size = new System.Drawing.Size(29, 20);
+            this.txtLess.Size = new System.Drawing.Size(48, 20);
             this.txtLess.TabIndex = 5;
             // 
             // txtDis
             // 
-            this.txtDis.Location = new System.Drawing.Point(151, 119);
+            this.txtDis.Location = new System.Drawing.Point(207, 151);
             this.txtDis.Name = "txtDis";
-            this.txtDis.Size = new System.Drawing.Size(29, 20);
+            this.txtDis.Size = new System.Drawing.Size(48, 20);
             this.txtDis.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 70);
+            this.label1.Location = new System.Drawing.Point(12, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 7;
@@ -122,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 96);
+            this.label2.Location = new System.Drawing.Point(12, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 8;
@@ -131,7 +91,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 122);
+            this.label3.Location = new System.Drawing.Point(12, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 9;
@@ -139,17 +99,17 @@
             // 
             // txtRes
             // 
-            this.txtRes.Location = new System.Drawing.Point(128, 145);
+            this.txtRes.Location = new System.Drawing.Point(186, 180);
             this.txtRes.Name = "txtRes";
             this.txtRes.ReadOnly = true;
-            this.txtRes.Size = new System.Drawing.Size(52, 20);
+            this.txtRes.Size = new System.Drawing.Size(69, 20);
             this.txtRes.TabIndex = 20;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 171);
+            this.button1.Location = new System.Drawing.Point(15, 206);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 23);
+            this.button1.Size = new System.Drawing.Size(73, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "Price";
             this.button1.UseVisualStyleBackColor = true;
@@ -158,7 +118,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 148);
+            this.label4.Location = new System.Drawing.Point(12, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 11;
@@ -166,9 +126,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(74, 171);
+            this.button2.Location = new System.Drawing.Point(101, 206);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 23);
+            this.button2.Size = new System.Drawing.Size(70, 23);
             this.button2.TabIndex = 21;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
@@ -176,20 +136,84 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(130, 171);
+            this.button3.Location = new System.Drawing.Point(186, 206);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 23);
+            this.button3.Size = new System.Drawing.Size(69, 23);
             this.button3.TabIndex = 22;
-            this.button3.Text = "Close";
+            this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(274, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 80);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.Location = new System.Drawing.Point(12, 24);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(48, 48);
+            this.btnAdd.TabIndex = 24;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnMerch
+            // 
+            this.btnMerch.Image = ((System.Drawing.Image)(resources.GetObject("btnMerch.Image")));
+            this.btnMerch.Location = new System.Drawing.Point(75, 24);
+            this.btnMerch.Name = "btnMerch";
+            this.btnMerch.Size = new System.Drawing.Size(48, 48);
+            this.btnMerch.TabIndex = 25;
+            this.btnMerch.UseVisualStyleBackColor = true;
+            this.btnMerch.Click += new System.EventHandler(this.btnMerch_Click);
+            // 
+            // btnRaw
+            // 
+            this.btnRaw.Image = ((System.Drawing.Image)(resources.GetObject("btnRaw.Image")));
+            this.btnRaw.Location = new System.Drawing.Point(141, 24);
+            this.btnRaw.Name = "btnRaw";
+            this.btnRaw.Size = new System.Drawing.Size(48, 48);
+            this.btnRaw.TabIndex = 26;
+            this.btnRaw.UseVisualStyleBackColor = true;
+            this.btnRaw.Click += new System.EventHandler(this.btnRaw_Click);
+            // 
+            // btnAnalysis
+            // 
+            this.btnAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalysis.Image")));
+            this.btnAnalysis.Location = new System.Drawing.Point(207, 24);
+            this.btnAnalysis.Name = "btnAnalysis";
+            this.btnAnalysis.Size = new System.Drawing.Size(48, 48);
+            this.btnAnalysis.TabIndex = 27;
+            this.btnAnalysis.UseVisualStyleBackColor = true;
+            this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(346, 181);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(48, 48);
+            this.button4.TabIndex = 28;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(341, 211);
+            this.ClientSize = new System.Drawing.Size(418, 253);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnAnalysis);
+            this.Controls.Add(this.btnRaw);
+            this.Controls.Add(this.btnMerch);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
@@ -201,12 +225,9 @@
             this.Controls.Add(this.txtDis);
             this.Controls.Add(this.txtLess);
             this.Controls.Add(this.txtCPL);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.lkRaw);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
             this.Name = "Init";
             this.Text = "Init";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,10 +235,6 @@
 
         #endregion
 
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel lkRaw;
-        private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.TextBox txtCPL;
         private System.Windows.Forms.TextBox txtLess;
         private System.Windows.Forms.TextBox txtDis;
@@ -229,5 +246,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnMerch;
+        private System.Windows.Forms.Button btnRaw;
+        private System.Windows.Forms.Button btnAnalysis;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -32,17 +32,21 @@
             this.txtLeads = new System.Windows.Forms.TextBox();
             this.txtTrial = new System.Windows.Forms.TextBox();
             this.txtClose = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbMerchants
             // 
             this.cbMerchants.FormattingEnabled = true;
-            this.cbMerchants.Location = new System.Drawing.Point(3, 3);
+            this.cbMerchants.Location = new System.Drawing.Point(3, 25);
             this.cbMerchants.Name = "cbMerchants";
             this.cbMerchants.Size = new System.Drawing.Size(129, 21);
             this.cbMerchants.TabIndex = 0;
@@ -50,46 +54,28 @@
             // 
             // txtLeads
             // 
-            this.txtLeads.Location = new System.Drawing.Point(138, 3);
+            this.txtLeads.Location = new System.Drawing.Point(157, 25);
             this.txtLeads.Name = "txtLeads";
             this.txtLeads.Size = new System.Drawing.Size(34, 20);
             this.txtLeads.TabIndex = 1;
             // 
             // txtTrial
             // 
-            this.txtTrial.Location = new System.Drawing.Point(183, 3);
+            this.txtTrial.Location = new System.Drawing.Point(208, 25);
             this.txtTrial.Name = "txtTrial";
             this.txtTrial.Size = new System.Drawing.Size(34, 20);
             this.txtTrial.TabIndex = 2;
             // 
             // txtClose
             // 
-            this.txtClose.Location = new System.Drawing.Point(228, 3);
+            this.txtClose.Location = new System.Drawing.Point(259, 25);
             this.txtClose.Name = "txtClose";
             this.txtClose.Size = new System.Drawing.Size(34, 20);
             this.txtClose.TabIndex = 3;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Controls.Add(this.cbMerchants, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtClose, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtLeads, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtTrial, 2, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(29, 55);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(272, 35);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(66, 96);
+            this.button1.Location = new System.Drawing.Point(52, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -99,7 +85,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(226, 96);
+            this.button2.Location = new System.Drawing.Point(212, 107);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -109,7 +95,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(145, 96);
+            this.button3.Location = new System.Drawing.Point(131, 107);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
@@ -117,17 +103,77 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cbMerchants, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtLeads, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtClose, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtTrial, 2, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.27273F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.72727F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(310, 81);
+            this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Sales Approach";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(157, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Lead(s)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(208, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Trial(s)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(259, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Close(s)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 220);
+            this.ClientSize = new System.Drawing.Size(335, 142);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Pricing";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,10 +186,14 @@
         private System.Windows.Forms.TextBox txtLeads;
         private System.Windows.Forms.TextBox txtTrial;
         private System.Windows.Forms.TextBox txtClose;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

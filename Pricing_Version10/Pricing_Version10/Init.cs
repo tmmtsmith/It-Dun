@@ -20,48 +20,27 @@ namespace Pricing_Version10
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (fForm1.IsDisposed == true)
-            {
-                fForm1 = new Form1();
-            }
-            
-            fForm1.Show();
+           
         }
 
         fAddMerchant formAdd = new fAddMerchant();
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (formAdd.IsDisposed == true)
-            {
-                formAdd = new fAddMerchant();
-            }
-            
-            formAdd.Show();
+
         }
 
         Raw fRaw = new Raw();
 
         private void lkRaw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (fRaw.IsDisposed == true)
-            {
-                fRaw = new Raw();
-            }
-            
-            fRaw.Show();
+
         }
 
         Analysis fAnalysis = new Analysis();
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (fAnalysis.IsDisposed == true)
-            {
-                fAnalysis = new Analysis();
-            }
-            
-            fAnalysis.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,6 +83,46 @@ namespace Pricing_Version10
                     (co as TextBox).Clear();
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (fForm1.IsDisposed == true)
+            {
+                fForm1 = new Form1();
+            }
+
+            fForm1.Show();
+        }
+
+        private void btnMerch_Click(object sender, EventArgs e)
+        {
+            if (formAdd.IsDisposed == true)
+            {
+                formAdd = new fAddMerchant();
+            }
+
+            formAdd.Show();
+        }
+
+        private void btnRaw_Click(object sender, EventArgs e)
+        {
+            if (fRaw.IsDisposed == true)
+            {
+                fRaw = new Raw();
+            }
+
+            fRaw.Show();
+        }
+
+        private void btnAnalysis_Click(object sender, EventArgs e)
+        {
+            if (fAnalysis.IsDisposed == true)
+            {
+                fAnalysis = new Analysis();
+            }
+
+            fAnalysis.Show();
         }
 
     }
