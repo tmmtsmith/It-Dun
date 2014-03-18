@@ -14,6 +14,12 @@ namespace Pricing_Version10
         public Init()
         {
             InitializeComponent();
+            tt1.SetToolTip(btnAdd, "Add Sales Results");
+            tt2.SetToolTip(btnMerch, "Add New Sales Method");
+            tt3.SetToolTip(btnRaw, "View Raw Data");
+            tt4.SetToolTip(btnAnalysis, "View Sales Results");
+            tt5.SetToolTip(txtDis, "Enter the percent as a whole number");
+            tt6.SetToolTip(btnHelp,"Get Help");
         }
 
         Form1 fForm1 = new Form1();

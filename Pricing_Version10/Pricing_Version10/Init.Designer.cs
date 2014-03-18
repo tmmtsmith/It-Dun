@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Init));
             this.txtCPL = new System.Windows.Forms.TextBox();
             this.txtLess = new System.Windows.Forms.TextBox();
@@ -45,7 +46,13 @@
             this.btnMerch = new System.Windows.Forms.Button();
             this.btnRaw = new System.Windows.Forms.Button();
             this.btnAnalysis = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.tt1 = new System.Windows.Forms.ToolTip(this.components);
+            this.tt2 = new System.Windows.Forms.ToolTip(this.components);
+            this.tt3 = new System.Windows.Forms.ToolTip(this.components);
+            this.tt4 = new System.Windows.Forms.ToolTip(this.components);
+            this.tt5 = new System.Windows.Forms.ToolTip(this.components);
+            this.tt6 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,22 +200,22 @@
             this.btnAnalysis.UseVisualStyleBackColor = true;
             this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
             // 
-            // button4
+            // btnHelp
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(346, 181);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(48, 48);
-            this.button4.TabIndex = 28;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
+            this.btnHelp.Location = new System.Drawing.Point(346, 181);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(48, 48);
+            this.btnHelp.TabIndex = 28;
+            this.btnHelp.UseVisualStyleBackColor = true;
             // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(418, 253);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(410, 253);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnAnalysis);
             this.Controls.Add(this.btnRaw);
             this.Controls.Add(this.btnMerch);
@@ -225,8 +232,9 @@
             this.Controls.Add(this.txtDis);
             this.Controls.Add(this.txtLess);
             this.Controls.Add(this.txtCPL);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Init";
-            this.Text = "Init";
+            this.Text = "Kristen\'s Piano Studio - Home";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,6 +259,12 @@
         private System.Windows.Forms.Button btnMerch;
         private System.Windows.Forms.Button btnRaw;
         private System.Windows.Forms.Button btnAnalysis;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.ToolTip tt1;
+        private System.Windows.Forms.ToolTip tt2;
+        private System.Windows.Forms.ToolTip tt3;
+        private System.Windows.Forms.ToolTip tt4;
+        private System.Windows.Forms.ToolTip tt5;
+        private System.Windows.Forms.ToolTip tt6;
     }
 }

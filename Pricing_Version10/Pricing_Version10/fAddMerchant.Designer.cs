@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddMerchant));
             this.txtAddApp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@
             // 
             this.txtAddApp.Location = new System.Drawing.Point(12, 35);
             this.txtAddApp.Name = "txtAddApp";
-            this.txtAddApp.Size = new System.Drawing.Size(100, 20);
+            this.txtAddApp.Size = new System.Drawing.Size(172, 20);
             this.txtAddApp.TabIndex = 0;
             // 
             // label1
@@ -46,15 +47,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "New Approach:";
+            this.label1.Text = "New Sales Method:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(128, 33);
+            this.button1.Location = new System.Drawing.Point(218, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 23);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,11 +63,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(197, 34);
+            this.button2.Location = new System.Drawing.Point(299, 33);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 23);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Exit";
+            this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -74,13 +75,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 73);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(384, 75);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAddApp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fAddMerchant";
-            this.Text = "fAddMerchant";
+            this.Text = "Kristen\'s Piano Studio - Add New Sales Method";
             this.ResumeLayout(false);
             this.PerformLayout();
 
