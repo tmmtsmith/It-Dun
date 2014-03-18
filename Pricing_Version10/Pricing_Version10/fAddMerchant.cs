@@ -26,7 +26,7 @@ namespace Pricing_Version10
         {
             using (var scon = Connections.Connect())
             {
-                SqlCommand addApp = new SqlCommand("INSERT INTO ApproachList (ApproachName) SELECT @1", scon);
+                SqlCommand addApp = new SqlCommand("INSERT INTO SalesList (SalesApproach) SELECT @1", scon);
                 addApp.Parameters.Add(new SqlParameter("@1", txtAddApp.Text));
                 addApp.ExecuteNonQuery();
                 scon.Close();

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Pricing_Version10
 {
@@ -14,8 +15,9 @@ namespace Pricing_Version10
         public Analysis()
         {
             InitializeComponent();
-            string a = "SELECT * FROM ApproachResults";
+            string a = "SELECT * FROM SalesResults";
             ReturnTables.ReturnGridView(dAnalysis, a);
+
         }
 
         private void button1_Click(object sender, EventArgs e)

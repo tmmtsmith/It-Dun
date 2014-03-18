@@ -53,6 +53,8 @@
             this.tt4 = new System.Windows.Forms.ToolTip(this.components);
             this.tt5 = new System.Windows.Forms.ToolTip(this.components);
             this.tt6 = new System.Windows.Forms.ToolTip(this.components);
+            this.txtDisAm = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,9 +102,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Discount:";
+            this.label3.Text = "Discount Percent:";
             // 
             // txtRes
             // 
@@ -209,12 +211,31 @@
             this.btnHelp.TabIndex = 28;
             this.btnHelp.UseVisualStyleBackColor = true;
             // 
+            // txtDisAm
+            // 
+            this.txtDisAm.Location = new System.Drawing.Point(267, 180);
+            this.txtDisAm.Name = "txtDisAm";
+            this.txtDisAm.ReadOnly = true;
+            this.txtDisAm.Size = new System.Drawing.Size(69, 20);
+            this.txtDisAm.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(264, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Discount:";
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 253);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtDisAm);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnAnalysis);
             this.Controls.Add(this.btnRaw);
@@ -266,5 +287,7 @@
         private System.Windows.Forms.ToolTip tt4;
         private System.Windows.Forms.ToolTip tt5;
         private System.Windows.Forms.ToolTip tt6;
+        private System.Windows.Forms.TextBox txtDisAm;
+        private System.Windows.Forms.Label label5;
     }
 }

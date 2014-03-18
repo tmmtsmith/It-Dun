@@ -19,12 +19,12 @@ namespace Pricing_Version10
             
             using (var scon = Connections.Connect())
             {
-                SqlCommand qMer = new SqlCommand("SELECT DISTINCT ApproachName FROM ApproachList", scon);
+                SqlCommand qMer = new SqlCommand("SELECT DISTINCT SalesApproach FROM SalesList", scon);
                 SqlDataReader rMer = qMer.ExecuteReader();
 
                 while (rMer.Read())
                 {
-                    cbMerchants.Items.Add(rMer["ApproachName"].ToString());
+                    cbMerchants.Items.Add(rMer["SalesApproach"].ToString());
                 }
 
                 scon.Close();
@@ -44,7 +44,7 @@ namespace Pricing_Version10
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtLeads.Text == "" && txtTrial.Text == "" && txtClose.Text == "")
+            if (txtLeads.Text == "" && txtQuote.Text == "" && txtTrial.Text == "" && txtClose.Text == "")
             {
                 MessageBox.Show("At least one box must hold a numeric value.");
             }
@@ -54,11 +54,12 @@ namespace Pricing_Version10
                 {
                     try
                     {
-                        SqlCommand addRes = new SqlCommand("INSERT INTO StageResults (mName,cLeads,cTrial,cClose) SELECT @1,@2,@3,@4", scon);
+                        SqlCommand addRes = new SqlCommand("EXECUTE stp_StageResults @1,@2,@3,@4,@5", scon);
                         addRes.Parameters.Add(new SqlParameter("@1", cbMerchants.SelectedItem.ToString()));
                         addRes.Parameters.Add(new SqlParameter("@2", txtLeads.Text));
-                        addRes.Parameters.Add(new SqlParameter("@3", txtTrial.Text));
-                        addRes.Parameters.Add(new SqlParameter("@4", txtClose.Text));
+                        addRes.Parameters.Add(new SqlParameter("@3", txtQuote.Text));
+                        addRes.Parameters.Add(new SqlParameter("@4", txtTrial.Text));
+                        addRes.Parameters.Add(new SqlParameter("@5", txtClose.Text));
                         addRes.ExecuteNonQuery();
                     }
                     catch

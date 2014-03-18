@@ -26,7 +26,7 @@ namespace Pricing_Version10
     {
         public static SqlConnection Connect()
         {
-            SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=ClientMarketing");
+            SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=KPS");
             scon.Open();
             return scon;
         }
@@ -76,6 +76,14 @@ namespace Pricing_Version10
             double x = (a * discount);
             double y = a - x;
             return y;
+        }
+
+        public static double GetDiscount(double cost, double lessons, double discount)
+        {
+            double a = (cost * lessons);
+            discount = (discount / 100);
+            double x = (a * discount);
+            return x;
         }
     }
 }
