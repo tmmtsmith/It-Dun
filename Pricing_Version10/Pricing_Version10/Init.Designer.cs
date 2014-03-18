@@ -55,6 +55,8 @@
             this.tt6 = new System.Windows.Forms.ToolTip(this.components);
             this.txtDisAm = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,9 +131,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Final Price:";
+            this.label4.Text = "Discounted Total:";
             // 
             // button2
             // 
@@ -228,12 +230,31 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "Discount:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(264, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Total:";
+            // 
+            // txtTt
+            // 
+            this.txtTt.Location = new System.Drawing.Point(267, 125);
+            this.txtTt.Name = "txtTt";
+            this.txtTt.ReadOnly = true;
+            this.txtTt.Size = new System.Drawing.Size(69, 20);
+            this.txtTt.TabIndex = 32;
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 253);
+            this.Controls.Add(this.txtTt);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDisAm);
             this.Controls.Add(this.btnHelp);
@@ -289,5 +310,7 @@
         private System.Windows.Forms.ToolTip tt6;
         private System.Windows.Forms.TextBox txtDisAm;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTt;
     }
 }

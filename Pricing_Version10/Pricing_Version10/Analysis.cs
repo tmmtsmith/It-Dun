@@ -15,7 +15,7 @@ namespace Pricing_Version10
         public Analysis()
         {
             InitializeComponent();
-            string a = "SELECT * FROM SalesResults";
+            string a = "SELECT * FROM view_Analysis";
             ReturnTables.ReturnGridView(dAnalysis, a);
 
         }

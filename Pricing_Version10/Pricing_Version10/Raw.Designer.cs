@@ -64,12 +64,12 @@
             this.dGridView.Location = new System.Drawing.Point(12, 25);
             this.dGridView.Name = "dGridView";
             this.dGridView.ReadOnly = true;
-            this.dGridView.Size = new System.Drawing.Size(546, 150);
+            this.dGridView.Size = new System.Drawing.Size(729, 150);
             this.dGridView.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(484, 194);
+            this.button1.Location = new System.Drawing.Point(666, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -82,7 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(571, 229);
+            this.ClientSize = new System.Drawing.Size(752, 217);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -38,6 +38,7 @@
             // 
             // dAnalysis
             // 
+            this.dAnalysis.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,12 +58,12 @@
             this.dAnalysis.DefaultCellStyle = dataGridViewCellStyle2;
             this.dAnalysis.Location = new System.Drawing.Point(12, 12);
             this.dAnalysis.Name = "dAnalysis";
-            this.dAnalysis.Size = new System.Drawing.Size(434, 143);
+            this.dAnalysis.Size = new System.Drawing.Size(586, 124);
             this.dAnalysis.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(371, 161);
+            this.button1.Location = new System.Drawing.Point(523, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -75,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(457, 194);
+            this.ClientSize = new System.Drawing.Size(610, 179);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dAnalysis);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

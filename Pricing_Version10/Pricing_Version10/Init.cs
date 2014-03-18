@@ -57,13 +57,16 @@ namespace Pricing_Version10
                 double less = Convert.ToDouble(txtLess.Text);
                 double dis = Convert.ToDouble(txtDis.Text);
                 double ret = Pricing.GetPricing(cpl, less, dis);
+                double tt = Pricing.Price(cpl, less);
                 double disam = Pricing.GetDiscount(cpl, less, dis);
                 txtRes.Clear();
                 txtDisAm.Clear();
+                txtTt.Clear();
 
                 try
                 {
                     txtRes.AppendText("$" + Convert.ToString(ret));
+                    txtTt.AppendText("$" + Convert.ToString(tt));
                     txtDisAm.AppendText("$" + Convert.ToString(disam));
                 }
                 catch

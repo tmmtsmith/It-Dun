@@ -85,5 +85,11 @@ namespace Pricing_Version10
             double x = (a * discount);
             return x;
         }
+
+        public static double Price(double cost, double lessons)
+        {
+            double a = (cost * lessons);
+            return a;
+        }
     }
 }
