@@ -67,14 +67,14 @@
             this.txtTrial.Location = new System.Drawing.Point(251, 22);
             this.txtTrial.Name = "txtTrial";
             this.txtTrial.Size = new System.Drawing.Size(42, 20);
-            this.txtTrial.TabIndex = 2;
+            this.txtTrial.TabIndex = 3;
             // 
             // txtClose
             // 
             this.txtClose.Location = new System.Drawing.Point(304, 22);
             this.txtClose.Name = "txtClose";
             this.txtClose.Size = new System.Drawing.Size(42, 20);
-            this.txtClose.TabIndex = 3;
+            this.txtClose.TabIndex = 4;
             // 
             // button1
             // 
@@ -91,7 +91,7 @@
             this.button2.Location = new System.Drawing.Point(233, 88);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -101,7 +101,7 @@
             this.button3.Location = new System.Drawing.Point(152, 88);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
+            this.button3.TabIndex = 6;
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -146,7 +146,7 @@
             this.txtQuote.Location = new System.Drawing.Point(198, 22);
             this.txtQuote.Name = "txtQuote";
             this.txtQuote.Size = new System.Drawing.Size(42, 20);
-            this.txtQuote.TabIndex = 9;
+            this.txtQuote.TabIndex = 2;
             // 
             // label2
             // 
