@@ -75,6 +75,7 @@ namespace Pricing_Version10
                 }
 
                 txtLeads.Text = String.Empty;
+                txtQuote.Text = String.Empty;
                 txtTrial.Text = String.Empty;
                 txtClose.Text = String.Empty;
                 cbMerchants.SelectedIndex = -1;
