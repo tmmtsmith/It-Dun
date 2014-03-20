@@ -212,6 +212,7 @@
             this.btnHelp.Size = new System.Drawing.Size(48, 48);
             this.btnHelp.TabIndex = 28;
             this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // txtDisAm
             // 

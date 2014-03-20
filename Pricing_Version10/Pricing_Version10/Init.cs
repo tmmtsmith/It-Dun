@@ -137,5 +137,10 @@ namespace Pricing_Version10
             fAnalysis.Show();
         }
 
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"help.pdf");
+        }
+
     }
 }
