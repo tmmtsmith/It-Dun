@@ -92,4 +92,44 @@ namespace Pricing_Version10
             return a;
         }
     }
+
+    public static class StringDate
+    {
+        public static string GetStringDate()
+        {
+            DateTime now = DateTime.Now;
+
+            if (now.Month.ToString().Length == 1)
+            {
+                string moString = "0" + now.Month.ToString();
+
+                if (now.Day.ToString().Length == 1)
+                {
+                    string dayString = "0" + now.Day.ToString();
+                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
+                }
+                else
+                {
+                    string dayString = now.Day.ToString();
+                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
+                }
+            }
+            else
+            {
+                string moString = now.Month.ToString();
+
+                if (now.Day.ToString().Length == 1)
+                {
+                    string dayString = "0" + now.Day.ToString();
+                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
+                }
+                else
+                {
+                    string dayString = now.Day.ToString();
+                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
+                }
+            }
+
+        }
+    }
 }

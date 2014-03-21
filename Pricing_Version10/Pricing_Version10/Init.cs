@@ -146,9 +146,7 @@ namespace Pricing_Version10
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            DateTime now = DateTime.Now;
-            string nString = now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Minute.ToString();
-            StreamWriter write = new StreamWriter(@"output_" + nString + ".csv");
+            StreamWriter write = new StreamWriter(@"output_" + StringDate.GetStringDate() + ".csv");
             
             using (var scon = Connections.Connect())
             {
