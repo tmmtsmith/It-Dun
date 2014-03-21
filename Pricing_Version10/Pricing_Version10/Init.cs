@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace Pricing_Version10
 {
@@ -140,6 +142,29 @@ namespace Pricing_Version10
         private void btnHelp_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(@"help.pdf");
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            DateTime now = DateTime.Now;
+            string nString = now.Year.ToString() + now.Month.ToString() + now.Day.ToString() + now.Minute.ToString();
+            StreamWriter write = new StreamWriter(@"output_" + nString + ".csv");
+            
+            using (var scon = Connections.Connect())
+            {
+                SqlCommand outfile = new SqlCommand("SELECT * FROM view_Out", scon);
+                using (SqlDataReader read = outfile.ExecuteReader())
+                {
+                    using (write)
+                    {
+                        while (read.Read())
+                        {
+                            write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());
+                        }
+                    }
+                }
+            }
+
         }
 
     }

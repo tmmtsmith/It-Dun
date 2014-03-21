@@ -57,6 +57,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTt = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,12 +249,22 @@
             this.txtTt.Size = new System.Drawing.Size(69, 20);
             this.txtTt.TabIndex = 32;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(346, 119);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(48, 48);
+            this.button4.TabIndex = 33;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 253);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.txtTt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -313,5 +324,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTt;
+        private System.Windows.Forms.Button button4;
     }
 }
