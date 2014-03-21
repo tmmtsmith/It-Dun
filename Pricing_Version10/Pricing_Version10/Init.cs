@@ -21,7 +21,8 @@ namespace Pricing_Version10
             tt3.SetToolTip(btnRaw, "View Raw Data");
             tt4.SetToolTip(btnAnalysis, "View Sales Results");
             tt5.SetToolTip(txtDis, "Enter the percent as a whole number");
-            tt6.SetToolTip(btnHelp,"Get Help");
+            tt6.SetToolTip(btnHelp, "Get Help");
+            tt7.SetToolTip(btnOut, "Output Data To CSV");
         }
 
         Form1 fForm1 = new Form1();
