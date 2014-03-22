@@ -288,6 +288,7 @@
             this.Controls.Add(this.txtDis);
             this.Controls.Add(this.txtLess);
             this.Controls.Add(this.txtCPL);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Init";
             this.Text = "Kristen\'s Piano Studio - Home";

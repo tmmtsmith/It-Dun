@@ -95,40 +95,33 @@ namespace Pricing_Version10
 
     public static class StringDate
     {
-        public static string GetStringDate()
+        public static string GetYYYYMMDDHHStringDate()
         {
             DateTime now = DateTime.Now;
+            string y = now.Year.ToString();
+            string m = now.Month.ToString();
+            string d = now.Day.ToString();
+            string h = now.Hour.ToString();
 
-            if (now.Month.ToString().Length == 1)
+            // Month
+            if (m.Length == 1)
             {
-                string moString = "0" + now.Month.ToString();
-
-                if (now.Day.ToString().Length == 1)
-                {
-                    string dayString = "0" + now.Day.ToString();
-                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
-                }
-                else
-                {
-                    string dayString = now.Day.ToString();
-                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
-                }
+                m = "0" + m;
             }
-            else
+
+            // Day
+            if (d.Length == 1)
             {
-                string moString = now.Month.ToString();
-
-                if (now.Day.ToString().Length == 1)
-                {
-                    string dayString = "0" + now.Day.ToString();
-                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
-                }
-                else
-                {
-                    string dayString = now.Day.ToString();
-                    return now.Year.ToString() + moString + dayString + now.Minute.ToString();
-                }
+                d = "0" + d;
             }
+
+            // Hour
+            if (h.Length == 1)
+            {
+                h = "0" + h;
+            }
+
+            return y + m + d + h;
 
         }
     }

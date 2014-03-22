@@ -86,6 +86,7 @@ namespace Pricing_Version10
         private void button3_Click(object sender, EventArgs e)
         {
             txtLeads.Text = String.Empty;
+            txtQuote.Text = String.Empty;
             txtTrial.Text = String.Empty;
             txtClose.Text = String.Empty;
             cbMerchants.SelectedIndex = -1;

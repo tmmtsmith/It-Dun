@@ -147,7 +147,14 @@ namespace Pricing_Version10
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            StreamWriter write = new StreamWriter(@"output_" + StringDate.GetStringDate() + ".csv");
+            string p = @"output\";
+
+            if (!Directory.Exists(p))
+            {
+                DirectoryInfo d = Directory.CreateDirectory(p);
+            }
+            
+            StreamWriter write = new StreamWriter(p + "output_" + StringDate.GetYYYYMMDDHHStringDate() + ".csv");
             
             using (var scon = Connections.Connect())
             {
