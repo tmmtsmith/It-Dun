@@ -33,6 +33,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analysis));
             this.dAnalysis = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dAnalysis)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,12 +75,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(209, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 12);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "© RCSD and Consulting Parnters";
+            // 
             // Analysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(573, 207);
+            this.ClientSize = new System.Drawing.Size(573, 213);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dAnalysis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -88,6 +100,7 @@
             this.Text = "Kristen\'s Piano Studio - Sales Results";
             ((System.ComponentModel.ISupportInitialize)(this.dAnalysis)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,5 +108,6 @@
 
         private System.Windows.Forms.DataGridView dAnalysis;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
     }
 }

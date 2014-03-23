@@ -59,6 +59,7 @@
             this.txtTt = new System.Windows.Forms.TextBox();
             this.btnOut = new System.Windows.Forms.Button();
             this.tt7 = new System.Windows.Forms.ToolTip(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,12 +261,23 @@
             this.btnOut.UseVisualStyleBackColor = true;
             this.btnOut.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(134, 237);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(141, 12);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "© RCSD and Consulting Parnters";
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 253);
+            this.ClientSize = new System.Drawing.Size(410, 255);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnOut);
             this.Controls.Add(this.txtTt);
             this.Controls.Add(this.label6);
@@ -329,5 +341,6 @@
         private System.Windows.Forms.TextBox txtTt;
         private System.Windows.Forms.Button btnOut;
         private System.Windows.Forms.ToolTip tt7;
+        private System.Windows.Forms.Label label7;
     }
 }

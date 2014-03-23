@@ -147,31 +147,38 @@ namespace Pricing_Version10
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            string p = @"output\";
+            try
+            {
+                string p = @"output\";
 
-            if (!Directory.Exists(p))
-            {
-                DirectoryInfo d = Directory.CreateDirectory(p);
-            }
-            
-            StreamWriter write = new StreamWriter(p + "output_" + StringDate.GetYYYYMMDDHHStringDate() + ".csv");
-            
-            using (var scon = Connections.Connect())
-            {
-                SqlCommand outfile = new SqlCommand("SELECT * FROM view_Out", scon);
-                using (SqlDataReader read = outfile.ExecuteReader())
+                if (!Directory.Exists(p))
                 {
-                    using (write)
+                    DirectoryInfo d = Directory.CreateDirectory(p);
+                }
+
+                StreamWriter write = new StreamWriter(p + "output_" + StringDate.GetYYYYMMDDHHStringDate() + ".csv");
+
+                using (var scon = Connections.Connect())
+                {
+                    SqlCommand outfile = new SqlCommand("SELECT * FROM view_Out", scon);
+                    using (SqlDataReader read = outfile.ExecuteReader())
                     {
-                        write.WriteLine("SalesApproach,TotalSalesLeads,TotalSalesQuotes,TotalSalesTrials,TotalSalesClose,EarliestDate,LatestDate");
-                        while (read.Read())
+                        using (write)
                         {
-                            write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());
+                            write.WriteLine("SalesApproach,TotalSalesLeads,TotalSalesQuotes,TotalSalesTrials,TotalSalesClose,EarliestDate,LatestDate");
+                            while (read.Read())
+                            {
+                                write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());
+                            }
                         }
                     }
                 }
-            }
 
+            }
+            catch
+            {
+                MessageBox.Show("Error: You need to run the program as administrator in order to output data.");
+            }
         }
 
     }
