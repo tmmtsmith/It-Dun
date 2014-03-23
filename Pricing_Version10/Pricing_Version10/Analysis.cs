@@ -16,7 +16,12 @@ namespace Pricing_Version10
         {
             InitializeComponent();
             string a = "SELECT * FROM view_Analysis";
-            ReturnTables.ReturnGridView(dAnalysis, a);
+            //ReturnTables.ReturnGridView(dAnalysis, a);
+            using (var scon = Connections.Connect())
+            {
+                ReturnTables.RefreshReturnGridView(dAnalysis, a, scon);
+                scon.Close();
+            }
 
         }
 

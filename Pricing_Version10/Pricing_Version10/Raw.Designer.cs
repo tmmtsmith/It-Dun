@@ -84,6 +84,7 @@
             this.ClientSize = new System.Drawing.Size(687, 206);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Raw";
             this.Text = "Kristen\'s Piano Studio - Raw Data";

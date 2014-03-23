@@ -26,8 +26,8 @@ namespace Pricing_Version10
     {
         public static SqlConnection Connect()
         {
-            //SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=KPS");
-            SqlConnection scon = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDBFileName=C:\Data\Piano.mdf;Database=Piano;Trusted_Connection=Yes");
+            SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=KPS");
+            //SqlConnection scon = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDBFileName=C:\Data\Piano.mdf;Database=Piano;Trusted_Connection=Yes");
             scon.Open();
             return scon;
         }
@@ -65,6 +65,20 @@ namespace Pricing_Version10
                 scon.Close();
                 return dG;
             }
+        }
+
+        public static DataGridView RefreshReturnGridView(DataGridView dgv, string query, SqlConnection scon)
+        {
+            SqlCommand queryGrid = new SqlCommand(query, scon);
+            SqlDataAdapter sAdapt = new SqlDataAdapter(queryGrid);
+            sAdapt.SelectCommand = queryGrid;
+            DataTable dTab = new DataTable();
+            sAdapt.Fill(dTab);
+            BindingSource b = new BindingSource();
+            b.DataSource = dTab;
+            dgv.DataSource = b;
+            sAdapt.Update(dTab);
+            return dgv;
         }
     }
 

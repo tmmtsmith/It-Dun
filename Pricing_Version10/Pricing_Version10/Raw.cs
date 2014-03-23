@@ -16,7 +16,12 @@ namespace Pricing_Version10
         {
             InitializeComponent();
             string q = "SELECT * FROM view_Raw";
-            ReturnTables.ReturnGridView(dGridView, q);
+
+            using (var scon = Connections.Connect())
+            {
+                ReturnTables.RefreshReturnGridView(dGridView, q, scon);
+                scon.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
