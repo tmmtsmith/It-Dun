@@ -163,6 +163,7 @@ namespace Pricing_Version10
                 {
                     using (write)
                     {
+                        write.WriteLine("SalesApproach,TotalSalesLeads,TotalSalesQuotes,TotalSalesTrials,TotalSalesClose,EarliestDate,LatestDate");
                         while (read.Read())
                         {
                             write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());

@@ -26,7 +26,8 @@ namespace Pricing_Version10
     {
         public static SqlConnection Connect()
         {
-            SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=KPS");
+            //SqlConnection scon = new SqlConnection(@"integrated security=SSPI;data source=TIMOTHY\SQLEXPRESS;persist security info=False;initial catalog=KPS");
+            SqlConnection scon = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDBFileName=C:\Data\Piano.mdf;Database=Piano;Trusted_Connection=Yes");
             scon.Open();
             return scon;
         }

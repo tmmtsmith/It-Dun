@@ -61,15 +61,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.dGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dGridView.Location = new System.Drawing.Point(12, 25);
+            this.dGridView.Location = new System.Drawing.Point(12, 12);
             this.dGridView.Name = "dGridView";
-            this.dGridView.ReadOnly = true;
-            this.dGridView.Size = new System.Drawing.Size(729, 150);
+            this.dGridView.Size = new System.Drawing.Size(663, 150);
             this.dGridView.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(666, 181);
+            this.button1.Location = new System.Drawing.Point(600, 171);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -82,7 +81,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(752, 217);
+            this.ClientSize = new System.Drawing.Size(687, 206);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
