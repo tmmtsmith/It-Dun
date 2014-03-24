@@ -52,6 +52,7 @@
     <Compile Include="Analysis.Designer.cs">
       <DependentUpon>Analysis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connct.cs" />
     <Compile Include="fAddMerchant.cs">
       <SubType>Form</SubType>
     </Compile>

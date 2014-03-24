@@ -29,7 +29,9 @@ namespace Pricing_Version10
 
                 scon.Close();
             }
-
+            cbMerchants.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            cbMerchants.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cbMerchants.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void cbMerchants_SelectedIndexChanged(object sender, EventArgs e)

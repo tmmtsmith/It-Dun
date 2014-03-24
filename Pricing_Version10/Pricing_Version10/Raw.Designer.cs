@@ -85,7 +85,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(141, 12);
             this.label7.TabIndex = 35;
-            this.label7.Text = "© RCSD and Consulting Parnters";
+            this.label7.Text = "© RCSD and Consulting Partners";
             // 
             // Raw
             // 

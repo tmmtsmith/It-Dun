@@ -26,14 +26,15 @@ namespace Pricing_Version10
         {
             using (var scon = Connections.Connect())
             {
-                SqlCommand addApp = new SqlCommand("INSERT INTO SalesList (SalesApproach) SELECT @1", scon);
+                SqlCommand addApp = new SqlCommand("INSERT INTO SalesList (SalesApproach,SalesNotes) SELECT @1,@2", scon);
                 addApp.Parameters.Add(new SqlParameter("@1", txtAddApp.Text));
+                addApp.Parameters.Add(new SqlParameter("@2", txtNotes.Text));
                 addApp.ExecuteNonQuery();
                 scon.Close();
             }
 
             txtAddApp.Text = String.Empty;
-            Close();
+            txtNotes.Text = String.Empty;
         }
     }
 }
