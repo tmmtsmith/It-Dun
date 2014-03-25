@@ -34,34 +34,27 @@ namespace Pricing_Version10
         private void button2_Click(object sender, EventArgs e)
         {
             string sl = cbReport.SelectedItem.ToString();
+            string q1 = "SELECT * FROM view_Analysis";
+            string q2 = "SELECT * FROM view_3MoAnalysis";
+            string q3 = "SELECT * FROM SalesList";
 
-            if (sl == "Conversion Rates")
+            using (var scon = Connections.Connect())
             {
-                string a = "SELECT * FROM view_Analysis";
-                using (var scon = Connections.Connect())
+                if (sl == "Conversion Rates")
                 {
-                    ReturnTables.RefreshReturnGridView(dAnalysis, a, scon);
-                    scon.Close();
+                    ReturnTables.RefreshReturnGridView(dAnalysis, q1, scon);
                 }
-            }
-            else if (sl == "Three Month Conversion Rates")
-            {
-                string a = "SELECT * FROM view_3MoAnalysis";
-                using (var scon = Connections.Connect())
+                else if (sl == "Three Month Conversion Rates")
                 {
-                    ReturnTables.RefreshReturnGridView(dAnalysis, a, scon);
-                    scon.Close();
+                    ReturnTables.RefreshReturnGridView(dAnalysis, q2, scon);
                 }
-            }
-            else if (sl == "Other")
-            {
-                string a = "SELECT * FROM SalesList";
-                using (var scon = Connections.Connect())
+                else if (sl == "Other")
                 {
-                    ReturnTables.RefreshReturnGridView(dAnalysis, a, scon);
-                    scon.Close();
+                    ReturnTables.RefreshReturnGridView(dAnalysis, q3, scon);
                 }
+                scon.Close();
             }
+
         }
     }
 }
