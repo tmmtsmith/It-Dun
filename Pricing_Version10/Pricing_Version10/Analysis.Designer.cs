@@ -34,6 +34,9 @@
             this.dAnalysis = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.cbReport = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dAnalysis)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +62,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dAnalysis.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dAnalysis.Location = new System.Drawing.Point(12, 12);
+            this.dAnalysis.Location = new System.Drawing.Point(12, 38);
             this.dAnalysis.Name = "dAnalysis";
             this.dAnalysis.ReadOnly = true;
             this.dAnalysis.Size = new System.Drawing.Size(548, 154);
@@ -67,7 +70,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(485, 172);
+            this.button1.Location = new System.Drawing.Point(485, 198);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -79,18 +82,52 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(209, 195);
+            this.label7.Location = new System.Drawing.Point(209, 221);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(141, 12);
             this.label7.TabIndex = 35;
             this.label7.Text = "© RCSD and Consulting Partners";
+            // 
+            // cbReport
+            // 
+            this.cbReport.FormattingEnabled = true;
+            this.cbReport.Items.AddRange(new object[] {
+            "Conversion Rates",
+            "Three Month Conversion Rates",
+            "Other"});
+            this.cbReport.Location = new System.Drawing.Point(197, 6);
+            this.cbReport.Name = "cbReport";
+            this.cbReport.Size = new System.Drawing.Size(166, 21);
+            this.cbReport.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(116, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Select Report:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(371, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(56, 23);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "View";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Analysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(573, 213);
+            this.ClientSize = new System.Drawing.Size(573, 240);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbReport);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dAnalysis);
@@ -109,5 +146,8 @@
         private System.Windows.Forms.DataGridView dAnalysis;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbReport;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
