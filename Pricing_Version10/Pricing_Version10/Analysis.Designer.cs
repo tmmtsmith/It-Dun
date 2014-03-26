@@ -94,7 +94,8 @@
             this.cbReport.Items.AddRange(new object[] {
             "Conversion Rates",
             "Three Month Conversion Rates",
-            "Other"});
+            "Sales Approach Notes",
+            "Earliest/Latest Close"});
             this.cbReport.Location = new System.Drawing.Point(197, 6);
             this.cbReport.Name = "cbReport";
             this.cbReport.Size = new System.Drawing.Size(166, 21);
