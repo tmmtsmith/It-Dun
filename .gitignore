@@ -80,6 +80,7 @@ build/
 *.log
 *.scc
 Connct.cs
+Pricing_Version10.csproj
 
 # Visual C++ cache files
 ipch/
