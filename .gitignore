@@ -81,6 +81,7 @@ build/
 *.scc
 Connct.cs
 Pricing_Version10.csproj
+Analysis.cs
 
 # Visual C++ cache files
 ipch/
