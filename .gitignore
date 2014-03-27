@@ -82,6 +82,8 @@ build/
 Connct.cs
 Pricing_Version10.csproj
 Analysis.cs
+dsciencemethods.cs
+algorithms.cs
 
 # Visual C++ cache files
 ipch/
