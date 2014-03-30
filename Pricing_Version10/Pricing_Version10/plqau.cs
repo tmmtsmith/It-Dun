@@ -15,5 +15,10 @@ namespace Pricing_Version10
         {
             InitializeComponent();
         }
+
+        private void plqau_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
