@@ -97,6 +97,9 @@
     <EmbeddedResource Include="Init.resx">
       <DependentUpon>Init.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="plqau.resx">
+      <DependentUpon>plqau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -14,6 +14,8 @@ namespace Pricing_Version10
         public plqau()
         {
             InitializeComponent();
+
+            ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList");
         }
 
         private void plqau_Load(object sender, EventArgs e)

@@ -60,6 +60,7 @@
             this.btnOut = new System.Windows.Forms.Button();
             this.tt7 = new System.Windows.Forms.ToolTip(this.components);
             this.label7 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -271,12 +272,23 @@
             this.label7.TabIndex = 34;
             this.label7.Text = "© RCSD and Consulting Partners";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(274, 211);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(49, 23);
+            this.button4.TabIndex = 35;
+            this.button4.Text = "test";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_2);
+            // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(410, 255);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnOut);
             this.Controls.Add(this.txtTt);
@@ -342,5 +354,6 @@
         private System.Windows.Forms.Button btnOut;
         private System.Windows.Forms.ToolTip tt7;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
     }
 }

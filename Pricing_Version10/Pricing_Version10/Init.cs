@@ -184,5 +184,15 @@ namespace Pricing_Version10
             }
         }
 
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+            if (fplqau.IsDisposed == true)
+            {
+                fplqau = new plqau();
+            }
+
+            fplqau.Show();
+        }
+
     }
 }
