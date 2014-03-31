@@ -53,6 +53,12 @@
       <DependentUpon>Analysis.cs</DependentUpon>
     </Compile>
     <Compile Include="Connct.cs" />
+    <Compile Include="faddCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faddCost.Designer.cs">
+      <DependentUpon>faddCost.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddMerchant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <EmbeddedResource Include="Analysis.resx">
       <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faddCost.resx">
+      <DependentUpon>faddCost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAddMerchant.resx">
       <DependentUpon>fAddMerchant.cs</DependentUpon>

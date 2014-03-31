@@ -51,6 +51,8 @@ namespace Pricing_Version10
         // New form -- v2.1 build
         plqau fplqau = new plqau();
 
+        faddCost fadd = new faddCost();
+
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
         }
@@ -186,12 +188,12 @@ namespace Pricing_Version10
 
         private void button4_Click_2(object sender, EventArgs e)
         {
-            if (fplqau.IsDisposed == true)
+            if (fadd.IsDisposed == true)
             {
-                fplqau = new plqau();
+                fadd = new faddCost();
             }
 
-            fplqau.Show();
+            fadd.Show();
         }
 
     }

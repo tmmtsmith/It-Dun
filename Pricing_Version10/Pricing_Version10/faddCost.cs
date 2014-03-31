@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pricing_Version10
 {
-    public partial class plqau : Form
+    public partial class faddCost : Form
     {
-        public plqau()
+        public faddCost()
         {
             InitializeComponent();
 
@@ -20,14 +20,17 @@ namespace Pricing_Version10
             //ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList", "SalesApproach");
         }
 
-        private void plqau_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddCost_Click(object sender, EventArgs e)
         {
-            // Changed
+            using (var scon = Connections.Connect())
+            {
+                SqlCommand addCost = new SqlCommand("EXECUTE stp_AddCost @1,@2,@3", scon);
+                addCost.Parameters.Add(new SqlParameter("@1", cbSales.SelectedItem.ToString()));
+                addCost.Parameters.Add(new SqlParameter("@2", cbCP.SelectedItem.ToString()));
+                addCost.Parameters.Add(new SqlParameter("@3", txtCost.Text));
+                addCost.ExecuteNonQuery();
+                scon.Close();
+            }
         }
     }
 }

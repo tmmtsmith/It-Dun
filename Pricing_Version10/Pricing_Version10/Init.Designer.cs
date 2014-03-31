@@ -266,11 +266,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(134, 237);
+            this.label7.Location = new System.Drawing.Point(128, 237);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(141, 12);
+            this.label7.Size = new System.Drawing.Size(156, 12);
             this.label7.TabIndex = 34;
-            this.label7.Text = "© RCSD and Consulting Partners";
+            this.label7.Text = "© RCSD and RS Consulting Partners";
             // 
             // button4
             // 
