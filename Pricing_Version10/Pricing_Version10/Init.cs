@@ -23,6 +23,7 @@ namespace Pricing_Version10
             tt5.SetToolTip(txtDis, "Enter the percent as a whole number");
             tt6.SetToolTip(btnHelp, "Get Help");
             tt7.SetToolTip(btnOut, "Output Data To CSV");
+            tt8.SetToolTip(btnAddCost, "Add Cost Per Approach");
         }
 
         Form1 fForm1 = new Form1();

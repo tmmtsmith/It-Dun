@@ -60,7 +60,8 @@
             this.btnOut = new System.Windows.Forms.Button();
             this.tt7 = new System.Windows.Forms.ToolTip(this.components);
             this.label7 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAddCost = new System.Windows.Forms.Button();
+            this.tt8 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,21 +70,21 @@
             this.txtCPL.Location = new System.Drawing.Point(207, 95);
             this.txtCPL.Name = "txtCPL";
             this.txtCPL.Size = new System.Drawing.Size(48, 20);
-            this.txtCPL.TabIndex = 4;
+            this.txtCPL.TabIndex = 5;
             // 
             // txtLess
             // 
-            this.txtLess.Location = new System.Drawing.Point(207, 125);
+            this.txtLess.Location = new System.Drawing.Point(207, 124);
             this.txtLess.Name = "txtLess";
             this.txtLess.Size = new System.Drawing.Size(48, 20);
-            this.txtLess.TabIndex = 5;
+            this.txtLess.TabIndex = 6;
             // 
             // txtDis
             // 
             this.txtDis.Location = new System.Drawing.Point(207, 151);
             this.txtDis.Name = "txtDis";
             this.txtDis.Size = new System.Drawing.Size(48, 20);
-            this.txtDis.TabIndex = 6;
+            this.txtDis.TabIndex = 7;
             // 
             // label1
             // 
@@ -97,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 128);
+            this.label2.Location = new System.Drawing.Point(12, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 8;
@@ -125,7 +126,7 @@
             this.button1.Location = new System.Drawing.Point(15, 207);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(73, 23);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Price";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -144,7 +145,7 @@
             this.button2.Location = new System.Drawing.Point(101, 207);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 23);
-            this.button2.TabIndex = 21;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -154,7 +155,7 @@
             this.button3.Location = new System.Drawing.Point(186, 207);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(69, 23);
-            this.button3.TabIndex = 22;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -162,7 +163,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(274, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(332, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 80);
             this.pictureBox1.TabIndex = 23;
@@ -174,7 +175,7 @@
             this.btnAdd.Location = new System.Drawing.Point(12, 24);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(48, 48);
-            this.btnAdd.TabIndex = 24;
+            this.btnAdd.TabIndex = 0;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -184,37 +185,37 @@
             this.btnMerch.Location = new System.Drawing.Point(75, 24);
             this.btnMerch.Name = "btnMerch";
             this.btnMerch.Size = new System.Drawing.Size(48, 48);
-            this.btnMerch.TabIndex = 25;
+            this.btnMerch.TabIndex = 1;
             this.btnMerch.UseVisualStyleBackColor = true;
             this.btnMerch.Click += new System.EventHandler(this.btnMerch_Click);
             // 
             // btnRaw
             // 
             this.btnRaw.Image = ((System.Drawing.Image)(resources.GetObject("btnRaw.Image")));
-            this.btnRaw.Location = new System.Drawing.Point(141, 24);
+            this.btnRaw.Location = new System.Drawing.Point(267, 24);
             this.btnRaw.Name = "btnRaw";
             this.btnRaw.Size = new System.Drawing.Size(48, 48);
-            this.btnRaw.TabIndex = 26;
+            this.btnRaw.TabIndex = 4;
             this.btnRaw.UseVisualStyleBackColor = true;
             this.btnRaw.Click += new System.EventHandler(this.btnRaw_Click);
             // 
             // btnAnalysis
             // 
             this.btnAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalysis.Image")));
-            this.btnAnalysis.Location = new System.Drawing.Point(207, 24);
+            this.btnAnalysis.Location = new System.Drawing.Point(139, 24);
             this.btnAnalysis.Name = "btnAnalysis";
             this.btnAnalysis.Size = new System.Drawing.Size(48, 48);
-            this.btnAnalysis.TabIndex = 27;
+            this.btnAnalysis.TabIndex = 2;
             this.btnAnalysis.UseVisualStyleBackColor = true;
             this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
             // 
             // btnHelp
             // 
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
-            this.btnHelp.Location = new System.Drawing.Point(346, 181);
+            this.btnHelp.Location = new System.Drawing.Point(403, 180);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(48, 48);
-            this.btnHelp.TabIndex = 28;
+            this.btnHelp.TabIndex = 12;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
@@ -255,10 +256,10 @@
             // btnOut
             // 
             this.btnOut.Image = ((System.Drawing.Image)(resources.GetObject("btnOut.Image")));
-            this.btnOut.Location = new System.Drawing.Point(346, 119);
+            this.btnOut.Location = new System.Drawing.Point(403, 119);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(48, 48);
-            this.btnOut.TabIndex = 33;
+            this.btnOut.TabIndex = 11;
             this.btnOut.UseVisualStyleBackColor = true;
             this.btnOut.Click += new System.EventHandler(this.button4_Click_1);
             // 
@@ -266,29 +267,29 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(128, 237);
+            this.label7.Location = new System.Drawing.Point(145, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 12);
             this.label7.TabIndex = 34;
             this.label7.Text = "© RCSD and RS Consulting Partners";
             // 
-            // button4
+            // btnAddCost
             // 
-            this.button4.Location = new System.Drawing.Point(274, 211);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 23);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "test";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_2);
+            this.btnAddCost.Location = new System.Drawing.Point(203, 24);
+            this.btnAddCost.Name = "btnAddCost";
+            this.btnAddCost.Size = new System.Drawing.Size(48, 48);
+            this.btnAddCost.TabIndex = 3;
+            this.btnAddCost.Text = "teh $$";
+            this.btnAddCost.UseVisualStyleBackColor = true;
+            this.btnAddCost.Click += new System.EventHandler(this.button4_Click_2);
             // 
             // Init
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 255);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(463, 258);
+            this.Controls.Add(this.btnAddCost);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnOut);
             this.Controls.Add(this.txtTt);
@@ -354,6 +355,7 @@
         private System.Windows.Forms.Button btnOut;
         private System.Windows.Forms.ToolTip tt7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAddCost;
+        private System.Windows.Forms.ToolTip tt8;
     }
 }

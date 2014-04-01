@@ -140,7 +140,7 @@
             this.Controls.Add(this.cbCP);
             this.Controls.Add(this.cbSales);
             this.Name = "faddCost";
-            this.Text = "faddCost";
+            this.Text = "Kristen\'s Piano Studio - Add Cost";
             this.ResumeLayout(false);
             this.PerformLayout();
 
