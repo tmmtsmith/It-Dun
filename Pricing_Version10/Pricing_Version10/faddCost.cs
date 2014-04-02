@@ -16,8 +16,8 @@ namespace Pricing_Version10
         {
             InitializeComponent();
 
-            ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList");
-            //ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList", "SalesApproach");
+            //ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList");
+            ReturnCombo.GetCombo(cbSales, "SELECT DISTINCT SalesApproach FROM SalesList", "SalesApproach");
         }
 
         private void btnAddCost_Click(object sender, EventArgs e)
