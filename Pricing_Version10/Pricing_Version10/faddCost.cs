@@ -22,15 +22,26 @@ namespace Pricing_Version10
 
         private void btnAddCost_Click(object sender, EventArgs e)
         {
-            using (var scon = Connections.Connect())
+            if (txtCost.Text == "" && cbSales.SelectedIndex == -1 && cbCP.SelectedIndex == -1)
             {
-                SqlCommand addCost = new SqlCommand("EXECUTE stp_AddCost @1,@2,@3", scon);
-                addCost.Parameters.Add(new SqlParameter("@1", cbSales.SelectedItem.ToString()));
-                addCost.Parameters.Add(new SqlParameter("@2", cbCP.SelectedItem.ToString()));
-                addCost.Parameters.Add(new SqlParameter("@3", txtCost.Text));
-                addCost.ExecuteNonQuery();
-                scon.Close();
+                MessageBox.Show("Error: Ensure that you selected an item from Sales Approach, Cost Per, and entered a valid Cost.");
             }
+            else
+            {
+                using (var scon = Connections.Connect())
+                {
+                    SqlCommand addCost = new SqlCommand("EXECUTE stp_AddCost @1,@2,@3", scon);
+                    addCost.Parameters.Add(new SqlParameter("@1", cbSales.SelectedItem.ToString()));
+                    addCost.Parameters.Add(new SqlParameter("@2", cbCP.SelectedItem.ToString()));
+                    addCost.Parameters.Add(new SqlParameter("@3", txtCost.Text));
+                    addCost.ExecuteNonQuery();
+                    scon.Close();
+                }
+            }
+
+            txtCost.Text = String.Empty;
+            cbSales.SelectedIndex = -1;
+            cbCP.SelectedIndex = -1;
         }
     }
 }
