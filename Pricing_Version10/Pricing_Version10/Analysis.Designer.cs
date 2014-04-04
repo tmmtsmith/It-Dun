@@ -96,7 +96,8 @@
             "Conversion Rates",
             "Three Month Conversion Rates",
             "Sales Approach Notes",
-            "Earliest/Latest Close"});
+            "Earliest/Latest Close",
+            "Cost Analysis"});
             this.cbReport.Location = new System.Drawing.Point(186, 6);
             this.cbReport.Name = "cbReport";
             this.cbReport.Size = new System.Drawing.Size(166, 21);

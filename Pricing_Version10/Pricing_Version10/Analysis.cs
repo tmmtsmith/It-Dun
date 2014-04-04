@@ -38,6 +38,7 @@ namespace Pricing_Version10
             string q2 = "SELECT * FROM view_3MoAnalysis";
             string q3 = "SELECT * FROM view_SalesApproachNotes";
             string q4 = "SELECT * FROM view_ClosedEarliestRecent";
+            string q5 = "SELECT * FROM view_Cost";
 
             using (var scon = Connections.Connect())
             {
@@ -56,6 +57,10 @@ namespace Pricing_Version10
                 else if (sl == "Earliest/Latest Close")
                 {
                     ReturnTables.RefreshReturnGridView(dAnalysis, q4, scon);
+                }
+                else if (sl == "Cost Analysis")
+                {
+                    ReturnTables.RefreshReturnGridView(dAnalysis, q5, scon);
                 }
                 scon.Close();
             }

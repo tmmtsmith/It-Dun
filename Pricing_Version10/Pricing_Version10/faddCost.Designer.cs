@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbCP = new System.Windows.Forms.ComboBox();
             this.cbSales = new System.Windows.Forms.ComboBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -72,7 +73,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(117, 69);
+            this.label7.Location = new System.Drawing.Point(150, 70);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 12);
             this.label7.TabIndex = 46;
@@ -124,12 +125,23 @@
             this.cbSales.Size = new System.Drawing.Size(133, 21);
             this.cbSales.TabIndex = 0;
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(393, 29);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(62, 23);
+            this.btnClose.TabIndex = 49;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // faddCost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(416, 101);
+            this.ClientSize = new System.Drawing.Size(465, 96);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAddCost);
@@ -157,5 +169,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbCP;
         private System.Windows.Forms.ComboBox cbSales;
+        private System.Windows.Forms.Button btnClose;
     }
 }

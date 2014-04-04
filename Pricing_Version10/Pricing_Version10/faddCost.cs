@@ -43,5 +43,10 @@ namespace Pricing_Version10
             cbSales.SelectedIndex = -1;
             cbCP.SelectedIndex = -1;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
