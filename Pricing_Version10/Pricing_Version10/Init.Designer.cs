@@ -275,11 +275,11 @@
             // 
             // btnAddCost
             // 
+            this.btnAddCost.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCost.Image")));
             this.btnAddCost.Location = new System.Drawing.Point(203, 24);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(48, 48);
             this.btnAddCost.TabIndex = 3;
-            this.btnAddCost.Text = "teh $$";
             this.btnAddCost.UseVisualStyleBackColor = true;
             this.btnAddCost.Click += new System.EventHandler(this.button4_Click_2);
             // 
