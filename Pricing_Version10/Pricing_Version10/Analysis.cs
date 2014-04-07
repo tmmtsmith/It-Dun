@@ -62,6 +62,7 @@ namespace Pricing_Version10
                 {
                     ReturnTables.RefreshReturnGridView(dAnalysis, q5, scon);
                 }
+                // Add 3 reports (also, highlights)
                 scon.Close();
             }
 
