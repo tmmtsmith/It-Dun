@@ -174,6 +174,7 @@ namespace Pricing_Version10
                             write.WriteLine("SalesApproach,TotalSalesLeads,TotalSalesQuotes,TotalSalesTrials,TotalSalesClose,EarliestDate,LatestDate");
                             while (read.Read())
                             {
+                                //MessageBox.Show(Convert.ToString(read.FieldCount));
                                 write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());
                             }
                         }
