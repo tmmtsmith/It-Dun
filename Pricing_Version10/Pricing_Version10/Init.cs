@@ -83,9 +83,10 @@ namespace Pricing_Version10
                     MessageBox.Show("Failed to produce final value.");
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: Make sure all of the above boxes are valid numbers.");
+                LogErrors.LogError("btn1_Click event", ex.ToString(), "Convert/Return pricing/Clear boxes");
             }
             
         }
