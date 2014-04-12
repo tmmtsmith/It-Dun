@@ -30,12 +30,20 @@ namespace Pricing_Version10
             {
                 using (var scon = Connections.Connect())
                 {
-                    SqlCommand addCost = new SqlCommand("EXECUTE stp_AddCost @1,@2,@3", scon);
-                    addCost.Parameters.Add(new SqlParameter("@1", cbSales.SelectedItem.ToString()));
-                    addCost.Parameters.Add(new SqlParameter("@2", cbCP.SelectedItem.ToString()));
-                    addCost.Parameters.Add(new SqlParameter("@3", txtCost.Text));
-                    addCost.ExecuteNonQuery();
-                    scon.Close();
+                    try
+                    {
+                        // Add Cost
+                        SqlCommand addCost = new SqlCommand("EXECUTE stp_AddCost @1,@2,@3", scon);
+                        addCost.Parameters.Add(new SqlParameter("@1", cbSales.SelectedItem.ToString()));
+                        addCost.Parameters.Add(new SqlParameter("@2", cbCP.SelectedItem.ToString()));
+                        addCost.Parameters.Add(new SqlParameter("@3", txtCost.Text));
+                        addCost.ExecuteNonQuery();
+                        scon.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        LogErrors.LogError("Add Cost", ex.Message, "Failed to add cost to database.");
+                    }
                 }
             }
 

@@ -62,6 +62,7 @@ namespace Pricing_Version10
         {
             try
             {
+                // Rate Calculation
                 double cpl = Convert.ToDouble(txtCPL.Text);
                 double less = Convert.ToDouble(txtLess.Text);
                 double dis = Convert.ToDouble(txtDis.Text);
@@ -74,19 +75,21 @@ namespace Pricing_Version10
 
                 try
                 {
+                    // Append Text
                     txtRes.AppendText("$" + Convert.ToString(ret));
                     txtTt.AppendText("$" + Convert.ToString(tt));
                     txtDisAm.AppendText("$" + Convert.ToString(disam));
                 }
-                catch
+                catch (Exception ex)
                 {
                     MessageBox.Show("Failed to produce final value.");
+                    LogErrors.LogError("Append Text", ex.Message, "Adding dollar signs to boxes");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: Make sure all of the above boxes are valid numbers.");
-                LogErrors.LogError("btn1_Click event", ex.ToString(), "Convert/Return pricing/Clear boxes");
+                LogErrors.LogError("Rate Calculation", ex.Message, "Convert/Return pricing/Clear boxes");
             }
             
         }
@@ -156,6 +159,7 @@ namespace Pricing_Version10
         {
             try
             {
+                // Output File
                 string p = @"output\";
 
                 if (!Directory.Exists(p))
@@ -183,9 +187,10 @@ namespace Pricing_Version10
                 }
 
             }
-            catch
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: You need to run the program as administrator in order to output data.");
+                LogErrors.LogError("Output File", ex.Message, "Convert/Return pricing/Clear boxes");
             }
         }
 
