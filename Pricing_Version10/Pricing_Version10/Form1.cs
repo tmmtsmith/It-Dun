@@ -64,9 +64,10 @@ namespace Pricing_Version10
                         addRes.Parameters.Add(new SqlParameter("@5", txtClose.Text));
                         addRes.ExecuteNonQuery();
                     }
-                    catch
+                    catch (Exception ex)
                     {
                         MessageBox.Show("Either connection to the database failed, or you entered invalid values.");
+                        LogErrors.LogError("Add approach", ex.Message, "Database error - check message.");
                     }
                     finally
                     {
