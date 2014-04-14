@@ -42,6 +42,7 @@ namespace Pricing_Version10
                     }
                     catch (Exception ex)
                     {
+                        MessageBox.Show("Failure to connect to the database.");
                         LogErrors.LogError("Add Cost", ex.Message, "Failed to add cost to database.");
                     }
                 }

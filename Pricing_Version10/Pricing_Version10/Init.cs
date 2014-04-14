@@ -49,9 +49,10 @@ namespace Pricing_Version10
 
         Analysis fAnalysis = new Analysis();
 
-        // New form -- v2.1 build
+        
         plqau fplqau = new plqau();
 
+        // New form -- v2.1 build
         faddCost fadd = new faddCost();
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

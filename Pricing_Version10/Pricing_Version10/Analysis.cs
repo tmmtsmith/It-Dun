@@ -21,6 +21,8 @@ namespace Pricing_Version10
             using (var scon = Connections.Connect())
             {
                 ReturnTables.RefreshReturnGridView(dAnalysis, a, scon);
+                dAnalysis.RowsDefaultCellStyle.BackColor = Color.White;
+                dAnalysis.AlternatingRowsDefaultCellStyle.BackColor = Color.PowderBlue;
                 scon.Close();
             }
 

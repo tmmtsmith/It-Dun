@@ -20,6 +20,8 @@ namespace Pricing_Version10
             using (var scon = Connections.Connect())
             {
                 ReturnTables.RefreshReturnGridView(dGridView, q, scon);
+                dGridView.RowsDefaultCellStyle.BackColor = Color.White;
+                dGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.PowderBlue;
                 scon.Close();
             }
         }
