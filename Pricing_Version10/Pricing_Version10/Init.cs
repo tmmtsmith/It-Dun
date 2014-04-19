@@ -177,13 +177,27 @@ namespace Pricing_Version10
                     {
                         using (write)
                         {
+                            int lineMax = read.FieldCount;
                             write.WriteLine("SalesApproach,TotalSalesLeads,TotalSalesQuotes,TotalSalesTrials,TotalSalesClose,EarliestDate,LatestDate");
                             while (read.Read())
                             {
+                                /*
+                                List<string> readList = new List<string>();
+                                for (int i = 0; i < lineMax; i++)
+                                {
+                                    MessageBox.Show(read[i].ToString());
+                                    readList.Add(read[i].ToString());
+                                }
+                                string[] readArray = readList.ToArray();
+                                MessageBox.Show(readArray.ToString()); */
                                 //MessageBox.Show(Convert.ToString(read.FieldCount));
                                 write.WriteLine(read[0].ToString() + "," + read[1].ToString() + "," + read[2].ToString() + "," + read[3].ToString() + "," + read[4].ToString() + "," + read[5].ToString() + "," + read[6].ToString());
                             }
+                            read.Close();
+                            read.Dispose();
                         }
+                        write.Close();
+                        write.Dispose();
                     }
                 }
 
