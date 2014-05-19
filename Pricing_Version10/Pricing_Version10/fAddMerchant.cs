@@ -31,6 +31,7 @@ namespace Pricing_Version10
                 addApp.Parameters.Add(new SqlParameter("@2", txtNotes.Text));
                 addApp.ExecuteNonQuery();
                 scon.Close();
+                scon.Dispose();
             }
 
             txtAddApp.Text = String.Empty;

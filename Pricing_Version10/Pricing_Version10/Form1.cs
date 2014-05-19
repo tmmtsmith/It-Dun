@@ -28,6 +28,7 @@ namespace Pricing_Version10
                 }
 
                 scon.Close();
+                scon.Dispose();
             }
             cbMerchants.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             cbMerchants.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
@@ -74,6 +75,7 @@ namespace Pricing_Version10
                         SqlCommand move = new SqlCommand("EXECUTE stp_Move", scon);
                         move.ExecuteNonQuery();
                         scon.Close();
+                        scon.Dispose();
                     }
                 }
 

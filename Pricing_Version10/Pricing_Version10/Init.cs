@@ -199,13 +199,20 @@ namespace Pricing_Version10
                         write.Close();
                         write.Dispose();
                     }
+                    scon.Close();
+                    scon.Dispose();
                 }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: You need to run the program as administrator in order to output data.");
-                LogErrors.LogError("Output File", ex.Message, "Convert/Return pricing/Clear boxes");
+                using (var scon = Connections.Connect())
+                {
+                    MessageBox.Show("Error: You need to run the program as administrator in order to output data.");
+                    LogErrors.LogError("Output File", ex.Message, "Convert/Return pricing/Clear boxes");
+                    scon.Close();
+                    scon.Dispose();
+                }
             }
         }
 

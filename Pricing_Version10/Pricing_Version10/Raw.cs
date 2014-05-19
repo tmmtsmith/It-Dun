@@ -23,6 +23,7 @@ namespace Pricing_Version10
                 dGridView.RowsDefaultCellStyle.BackColor = Color.White;
                 dGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.PowderBlue;
                 scon.Close();
+                scon.Dispose();
             }
         }
 

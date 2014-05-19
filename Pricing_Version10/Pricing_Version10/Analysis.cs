@@ -24,6 +24,7 @@ namespace Pricing_Version10
                 dAnalysis.RowsDefaultCellStyle.BackColor = Color.White;
                 dAnalysis.AlternatingRowsDefaultCellStyle.BackColor = Color.PowderBlue;
                 scon.Close();
+                scon.Dispose();
             }
 
         }
